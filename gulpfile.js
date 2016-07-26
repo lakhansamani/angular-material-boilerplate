@@ -31,7 +31,7 @@ gulp.task('jsHandler', function() {
     .pipe(concat('app.js',{
       newLine:'\n;'
     }))
-    .pipe(uglify())
+    //.pipe(uglify())
     .pipe(gulp.dest('dist/scripts'));
 });
 gulp.task('usemin',function(){
